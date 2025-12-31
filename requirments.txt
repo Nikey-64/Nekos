@@ -1,0 +1,25 @@
+Requisitos
+
+Los requisitos Mínimos para correr Nekos son:
+
+- 1GB de RAM
+
+- 16GB de almacenamiento interno (HDD/SSD)
+
+- Procesador a 1Ghz (x86/64 o ARM)
+
+- Pantalla de 720pixeles (solo para la instalación)
+
+Los requisitos Recomendados para correr Nekos son:
+
+- 2GB de RAM
+
+- 32GB de almacenamiento interno (HDD/SSD)
+
+- Procesador a 1.60Ghz con dos núcleos (x86/64 o ARM)
+
+- Pantalla de 768pixeles o 1080pixeles
+
+- Unidad TPM 1.2 (recomendamos 1.5 solo si quieres encriptar tu disco de manera segura)
+
+- GPU de 1GB VRAM

@@ -1,0 +1,46 @@
+/* Estilos básicos para Nekos site */
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --max:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071026 0%, #0f1720 100%);color:#e6eef6;line-height:1.5}
+.container{max-width:var(--max);margin:0 auto;padding:2rem}
+.site-header{background:transparent;padding:.8rem 0;position:sticky;top:0;z-index:1000;transition:background .18s,box-shadow .18s}
+.site-header.scrolled{background:rgba(2,6,23,0.6);backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(2,6,23,0.4)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-weight:700;display:flex;align-items:center;gap:.6rem}
+nav a{color:var(--muted);margin-left:1rem;text-decoration:none}
+.hero{padding:4rem 0;text-align:center}
+.hero h2{font-size:2rem;margin:0 0 .5rem}
+.hero p{color:var(--muted);margin:0 0 1.2rem}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:#022;box-shadow:0 6px 20px rgba(110,231,183,0.14);border:0}
+.cta .btn{margin-right:.5rem}
+.features .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.features article{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px}
+.screenshots .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.shot{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:.5rem;border-radius:8px;color:var(--muted);overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.shot-img{width:100%;height:140px;object-fit:contain;background:rgba(255,255,255,0.03);padding:.8rem;display:block}
+.shot p{padding:.25rem 0 .5rem;color:var(--muted);margin:0;font-size:0.95rem}
+.feature-icon{width:64px;height:64px;object-fit:contain;display:block;margin:0 auto 0.6rem}
+.feature-icon--speed{width:88px;height:88px;padding:10px;background:rgba(110,231,183,0.06);border-radius:50%;box-shadow:0 6px 18px rgba(110,231,183,0.04)}
+.header-download{margin-left:1rem}
+.header-download.hidden{display:none}
+.header-download{padding:.4rem .8rem;border-radius:8px;font-size:0.95rem}
+.shot-placeholder{height:140px;display:flex;align-items:center;justify-content:center;color:var(--muted);padding:1rem;background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.02));border-radius:6px;width:100%}
+.downloads{display:flex;gap:.5rem;margin-top:1rem}
+.site-footer{padding:2rem 0;text-align:center;color:var(--muted)}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6)}
+.modal.hidden{display:none}
+.modal-content{background:var(--card);padding:1.5rem;border-radius:10px;max-width:420px;width:100%;position:relative}
+.modal-close{position:absolute;right:.6rem;top:.4rem;border:0;background:transparent;color:var(--muted);font-size:1.1rem}
+.logo-img{height:36px;width:auto;display:block}
+@media(max-width:700px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .hero h2{font-size:1.4rem}
+  .screenshots .shots{flex-direction:column}
+}

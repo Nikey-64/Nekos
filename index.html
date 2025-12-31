@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nekos — Sitio Oficial</title>
+  <link rel="icon" href="Nekos-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="Nekos-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><img src="Nekos-logo.png" alt="Nekos logo" class="logo-img">Nekos</h1>
+      <nav>
+        <a href="#features">Características</a>
+        <a href="#screenshots">Capturas</a>
+        <a href="#download">Descargar</a>
+        <a href="#docs">Documentación</a>
+        <a href="requirements.html">Requisitos</a>
+      </nav>
+        <a id="downloadTopBtn" class="btn primary header-download hidden" href="#">Descargar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Un sistema operativo moderno, ligero y seguro</h2>
+        <p>Diseñado para desarrolladores, creativos y usuarios que buscan rendimiento y simplicidad.</p>
+        <div class="cta">
+          <a class="btn primary" id="downloadBtn" href="#">Descargar</a>
+          <a class="btn" href="#docs">Leer documentación</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h3>Características principales</h3>
+      <div class="grid">
+        <article>
+          <img src="Speed.png" alt="Icono velocidad" class="feature-icon feature-icon--speed">
+          <h4>Rendimiento</h4>
+          <p>Optimizado para arrancar rápido y consumir menos recursos.</p>
+        </article>
+        <article>
+          <img src="Safe.png" alt="Icono seguridad" class="feature-icon">
+          <h4>Privacidad</h4>
+          <p>Configuraciones por defecto orientadas a proteger tus datos tanto de tu equipo como en el internet.</p>
+        </article>
+        <article>
+          <img src="Compatible.png" alt="Icono compatibilidad" class="feature-icon">
+          <h4>Compatibilidad</h4>
+          <p>Amplio soporte de hardware y paquetes modernos (por ahora tenemos aplicaciones basicas, puedes ver en NekoStore).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="screenshots" class="container screenshots">
+      <h3>Capturas</h3>
+      <div class="shots">
+        <div class="shot">
+          <div class="shot-placeholder">interfaz Amigable (próximamente)</div>
+        </div>
+        <div class="shot">
+          <div class="shot-placeholder">Centro de control (próximamente)</div>
+        </div>
+        <div class="shot">
+          <div class="shot-placeholder">Personalización (próximamente)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="container download">
+      <h3>Descargas</h3>
+      <p>Elige el instalador apropiado para tu arquitectura.</p>
+      <div class="downloads">
+        <button data-arch="x64" class="btn download-arch">Descargar (x64)</button>
+        <button data-arch="arm64" class="btn download-arch">Descargar (arm64)</button>
+      </div>
+    </section>
+
+    <section id="docs" class="container docs">
+      <h3>Documentación</h3>
+      <p>Guías de instalación, notas de versión y ayuda para desarrolladores.</p>
+      <a class="btn" href="#">Ver docs</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 NekosTeam</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <h4>Preparando descarga</h4>
+      <p id="modalText">Selecciona una arquitectura para descargar el instalador.</p>
+      <a id="modalLink" class="btn primary" href="#">Descargar ahora</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
